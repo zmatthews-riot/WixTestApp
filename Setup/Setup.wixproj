@@ -1,0 +1,15 @@
+﻿<Project Sdk="WixToolset.Sdk/4.0.0-rc.3">
+	<PropertyGroup>
+		<EnableProjectHarvesting>true</EnableProjectHarvesting>
+		<HarvestProjectsSuppressUniqueIds>true</HarvestProjectsSuppressUniqueIds>
+	</PropertyGroup>
+	<ItemGroup>
+		<HarvestProject Include="$(SolutionDir)WixTestApp\WixTestApp.csproj" ProjectOutputGroups="Binaries;Content;Symbols;" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\WixTestApp\WixTestApp.csproj" DoNotHarvest="true" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="WixToolset.Heat" Version="4.0.0-rc.3" />
+	</ItemGroup>
+</Project>

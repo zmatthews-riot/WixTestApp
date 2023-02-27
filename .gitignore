@@ -1,0 +1,8 @@
+*.suo
+*.user
+.nuget
+packages
+bin/
+obj/
+Setup/Setup/
+/UpgradeLog.htm
